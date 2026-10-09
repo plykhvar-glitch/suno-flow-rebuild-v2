@@ -518,6 +518,48 @@ a{color:inherit}
 .seg.kwseg button{padding:6px 9px}
 .pn-n.vc{color:var(--accent-ink)}
 
+
+/* navigation: which prototype am I in */
+.pdot{display:inline-block;width:9px;height:9px;border-radius:50%;flex:none;margin-right:7px;vertical-align:0}
+.pdot.o{background:#F4F1EC;box-shadow:0 0 0 2px rgba(244,241,236,.25)}
+.pdot.a{background:linear-gradient(135deg,#FF3E78,#FF7A1F);box-shadow:0 0 0 2px rgba(255,75,79,.3)}
+.nav-links button{display:inline-flex;align-items:center}
+@media(max-width:700px){.nav-links .lg{display:none}.nav-links button{padding:7px 9px}}
+.herobtns{flex-wrap:wrap;gap:12px;align-items:center}
+.bigbtn .pdot{margin-right:2px}
+.bigbtn.org{background:#F4F1EC;color:#1A1515}
+.bigbtn.org .pdot{background:#1A1515;box-shadow:none}
+.bigbtn:not(.org) .pdot{background:#fff;box-shadow:none}
+.herohint{font-size:13px;color:var(--ink3);margin:14px auto 0;max-width:560px;line-height:1.5}
+.herobtns .qr{display:flex}
+@media(max-width:1080px){.herobtns .qr{display:none}}
+.pathbar{border-bottom:1px solid var(--hair);background:var(--bg2)}
+.pathbar-in{max-width:1180px;margin:0 auto;padding:14px 32px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+@media(max-width:700px){.pathbar-in{padding:10px 12px;gap:10px}}
+.backov{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px 0 12px;border-radius:20px;border:1px solid var(--hair2);font-size:13.5px;font-weight:600;color:var(--ink)}
+.backov:hover{background:rgba(247,243,239,.06)}
+.backov svg{width:16px;height:16px}
+.ptabs{display:flex;gap:8px;flex:1;min-width:280px}
+.ptab{flex:1;display:flex;align-items:center;gap:4px;text-align:left;padding:10px 16px;border-radius:16px;border:1.5px solid var(--hair2);color:var(--ink2);transition:.15s}
+.ptab span{display:flex;flex-direction:column;gap:2px}
+.ptab b{font-size:14.5px;font-weight:700;color:var(--ink)}
+.ptab em{font-style:normal;font-size:12px;color:var(--ink3);line-height:1.35}
+.ptab:hover{border-color:rgba(247,243,239,.35)}
+.ptab.on[data-path=organic]{border-color:#F4F1EC;background:rgba(244,241,236,.08)}
+.ptab.on[data-path=asa]{border-color:#FF5A4A;background:rgba(255,75,79,.1)}
+.ptab:not(.on){opacity:.7}
+@media(max-width:600px){.ptab em{display:none}.ptab{padding:9px 12px}}
+.prevbtn{display:inline-flex;align-items:center;gap:5px;padding:8px 13px 8px 9px;border-radius:20px;background:#fff;border:1px solid #E1E4E6;font:600 12px/1 'Inter',sans-serif;color:#15181B}
+.prevbtn svg{width:13px;height:13px}
+.prevbtn[disabled]{opacity:.4;cursor:default}
+.seg .lab{font:700 10px/1 'Inter',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#8A9097;padding:0 6px 0 9px}
+.pn-path{display:inline-flex;align-items:center;font-size:12px;font-weight:700;padding:6px 12px 6px 10px;border-radius:14px;margin-bottom:18px}
+.pn-path.o{background:#F2EFEA;color:#3A3330}
+.pn-path.o .pdot{background:#1A1515;box-shadow:none}
+.pn-path.a{background:#FFE9E4;color:#B5263F}
+.panelcol{top:58px}
+.seg.kwseg{flex-wrap:wrap;justify-content:center;max-width:100%}
+@media(max-width:500px){.seg.kwseg{border-radius:16px}.kwseg .lab{width:100%;text-align:center;padding:5px 0 4px}}
 </style>
 </head>
 <body>
@@ -530,7 +572,8 @@ a{color:inherit}
     </div>
     <div class="nav-links">
       <button class="on" data-view="over">Overview</button>
-      <button data-view="proto">Prototype</button>
+      <button data-view="proto" data-path="organic"><i class="pdot o"></i>Organic<span class="lg"> prototype</span></button>
+      <button data-view="proto" data-path="asa"><i class="pdot a"></i>Apple Ads<span class="lg"> prototype</span></button>
     </div>
   </div>
 </div>
@@ -544,7 +587,12 @@ a{color:inherit}
     <h1>Suno</h1>
     <p class="lede">Five ideas to unlock more revenue from the traffic you already have — on your paywall and after it.</p>
     <div class="meta">Prepared by <b>Adapty</b> · based on your live iOS flow, your App Store listing and your Apple Ads keywords</div>
-    <div class="herobtns"><button class="ghostbtn" data-demo><span class="pl"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></svg></span>Watch the 30-second walkthrough</button></div>
+    <div class="herobtns">
+      <button class="bigbtn org" data-view="proto" data-path="organic"><i class="pdot o"></i>Organic prototype <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <button class="bigbtn" data-view="proto" data-path="asa"><i class="pdot a"></i>Apple Ads prototype <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </div>
+    <p class="herohint">Organic: the paywall uses the name from your onboarding. Apple Ads: it also follows the search that brought them in.</p>
+    <div class="herobtns" style="margin-top:18px"><div class="qr"><img src="img/qr.svg" alt="QR code for the prototype"><span><b>Open it on your phone</b>Scan to try the flow in your hand.</span></div><button class="ghostbtn" data-demo><span class="pl"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></svg></span>Watch the 30-second walkthrough</button></div>
     <div class="stats">
       <div class="stat"><b>30,000+</b><span>apps run subscriptions<br>on Adapty</span></div>
       <div class="stat"><b>5</b><span>ideas, each rebuilt<br>as a working screen</span></div>
@@ -694,13 +742,7 @@ a{color:inherit}
       </div>
     </div>
 
-    <div class="cta-row">
-      <div class="qr"><img src="img/qr.svg" alt="QR code for the prototype"><span><b>Or open it on your phone</b>Scan to try the flow in your hand.</span></div>
-      <button class="bigbtn" data-view="proto">Open the prototype
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </button>
-    </div>
-  </div>
+</div>
 </div>
 
 <div class="foot">
@@ -712,14 +754,21 @@ a{color:inherit}
 
 <!-- ======================= PROTOTYPE ======================= -->
 <div class="view" id="view-proto">
+<div class="pathbar"><div class="pathbar-in">
+  <button class="backov" data-view="over"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Back to overview</button>
+  <div class="ptabs" id="ptabs">
+    <button class="ptab" data-path="organic"><i class="pdot o"></i><span><b>Organic installs</b><em>Paywall personalised with the name from onboarding</em></span></button>
+    <button class="ptab" data-path="asa"><i class="pdot a"></i><span><b>Apple Ads installs</b><em>Paywall follows the search that brought them in</em></span></button>
+  </div>
+</div></div>
 <div class="stage">
   <div class="phonecol">
     <div class="tools" id="tools">
-      <div class="seg" id="segPath"><button data-path="organic" class="on">Organic</button><button data-path="asa">Apple Ads</button></div>
+      <button class="prevbtn" id="prevBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>Previous screen</button>
       <div class="seg" id="segLang"><button data-lang="en" class="on">EN</button><button data-lang="es">ES</button><button data-lang="de">DE</button></div>
       <div class="seg" id="segTheme"><button data-theme="light">Light</button><button data-theme="dark" class="on">Dark</button></div>
       <button class="demo-btn" id="demoBtn"><svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor"><path d="M7 4.5v15l12-7.5z"/></svg>30-sec walkthrough</button>
-      <div class="seg kwseg hidden" id="segKw"><button data-kw="maker" class="on">music maker</button><button data-kw="rival">SoundCloud</button><button data-kw="cover">ai cover</button><button data-kw="lyrics">lyrics</button><button data-kw="brand">suno</button></div>
+      <div class="seg kwseg hidden" id="segKw"><span class="lab">Searched for</span><button data-kw="maker" class="on">music maker</button><button data-kw="rival">SoundCloud</button><button data-kw="cover">ai cover</button><button data-kw="lyrics">lyrics</button><button data-kw="brand">suno</button></div>
     </div>
     <div class="phone">
       <div class="phone-in" id="phoneIn">
@@ -1016,7 +1065,7 @@ var UNDER={offer:'paywall', topup:'pro'};
 
 function chrome(){ var lite=S.theme==='light', ink=lite && !scr[cur].dataset.light;
   document.getElementById('sbar').classList.toggle('ink',ink); document.getElementById('homebar').classList.toggle('ink',ink); }
-function enter(id){ chrome(); paintChips(); paintPanel(); }
+function enter(id){ chrome(); paintChips(); paintPanel(); var pb=document.getElementById('prevBtn'); if(pb) pb.disabled=!hist.length; }
 function go(id,opts){
   opts=opts||{}; if(id===cur) return;
   var from=scr[cur], to=scr[id];
@@ -1076,13 +1125,17 @@ document.getElementById('prCta').addEventListener('click',function(){ jump('payw
 function setSeg(id,attr,val){ document.querySelectorAll('#'+id+' button').forEach(function(b){ b.classList.toggle('on', b.dataset[attr]===val); }); }
 function setLang(l){ S.lang=l; S0.lang=l; setSeg('segLang','lang',l); applyStatic(); syncScreen(); paintPanel(); }
 function setTheme(th){ S.theme=th; S0.theme=th; document.getElementById('phoneIn').classList.toggle('lite',th==='light'); setSeg('segTheme','theme',th); chrome(); }
-function setPath(p){ S.path=p; S0.path=p; setSeg('segPath','path',p); document.getElementById('segKw').classList.toggle('hidden',p!=='asa');
+function setPath(p){ S.path=p; S0.path=p; paintPathUI(); document.getElementById('segKw').classList.toggle('hidden',p!=='asa');
   document.getElementById('chiphint').textContent = p==='asa' ? 'Pick the search above the phone — the paywall, the offer and the first screen after purchase follow it.' : 'Jump to any screen — the name from their onboarding is already filled in.';
   if(ORDER().indexOf(cur)<0) jump('pro'); else { syncScreen(); paintChips(); paintPanel(); } }
 function setKw(k){ S.kw=k; S0.kw=k; setSeg('segKw','kw',k); syncScreen(true); paintPanel(); }
 document.querySelectorAll('#segLang button').forEach(function(b){ b.addEventListener('click',function(){ stopDemo(); setLang(b.dataset.lang); }); });
 document.querySelectorAll('#segTheme button').forEach(function(b){ b.addEventListener('click',function(){ setTheme(b.dataset.theme); }); });
-document.querySelectorAll('#segPath button').forEach(function(b){ b.addEventListener('click',function(){ stopDemo(); setPath(b.dataset.path); }); });
+document.querySelectorAll('#ptabs .ptab').forEach(function(b){ b.addEventListener('click',function(){ stopDemo(); setPath(b.dataset.path); jump('paywall'); }); });
+document.getElementById('prevBtn').addEventListener('click',function(){ stopDemo(); back(); });
+function paintPathUI(){ var onP=document.getElementById('view-proto').classList.contains('on');
+  document.querySelectorAll('#ptabs .ptab').forEach(function(b){ b.classList.toggle('on', b.dataset.path===S.path); });
+  document.querySelectorAll('.nav-links button[data-view]').forEach(function(b){ b.classList.toggle('on', b.dataset.view==='over' ? !onP : (onP && b.dataset.path===S.path)); }); }
 document.querySelectorAll('#segKw button').forEach(function(b){ b.addEventListener('click',function(){ stopDemo(); setKw(b.dataset.kw); }); });
 
 /* ================= the 30-second walkthrough ================= */
@@ -1117,7 +1170,7 @@ function startDemo(){
         cap('They tap back. One second chance: a month of Pro, next to what Free leaves out.'); await tap('#payClose',tok); await pause(2600,tok);
         await tap('#offerCta',tok);
         cap('After purchase: their credits shown as a balance — virtual currency, now in Adapty.'); await pause(2600,tok);
-        cap('Switch to “Apple Ads” above the phone to see a paywall per search.');
+        cap('Pick “Apple Ads installs” above to see a paywall per search.');
         finger.classList.remove('show'); await pause(2400,tok); stopDemo();
       } else {
         cap('An install from the search “music maker”. Onboarding has run as it ships.'); await pause(1500,tok);
@@ -1174,7 +1227,7 @@ function outBlock(lab,val){
 }
 function paintPanel(){
   var d=PANELS()[cur]; if(!d) return;
-  var h='';
+  var h='<div class="pn-path '+(S.path==='asa'?'a':'o')+'"><i class="pdot '+(S.path==='asa'?'a':'o')+'"></i>'+(S.path==='asa' ? 'Apple Ads installs · searched '+KWNAME[S.kw] : 'Organic installs')+'</div>';
   if(d.ctx){
     h += '<div class="pn-n ctx">Context · no change proposed</div><h3 class="pn-t">'+d.t+'</h3>'
        + '<div class="pn-kept">'+d.kept+'</div>';
@@ -1208,10 +1261,11 @@ function showView(v){
   if(v!=='proto') stopDemo();
   document.querySelectorAll('.view').forEach(function(x){ x.classList.remove('on'); });
   document.getElementById('view-'+v).classList.add('on');
-  document.querySelectorAll('.nav-links button[data-view]').forEach(function(b){ b.classList.toggle('on', b.dataset.view===v); });
-  window.scrollTo(0,0);
+  window.scrollTo(0,0); paintPathUI();
 }
-document.querySelectorAll('[data-view]').forEach(function(b){ b.addEventListener('click',function(){ showView(b.dataset.view); }); });
+document.querySelectorAll('[data-view]').forEach(function(b){ b.addEventListener('click',function(){
+  if(b.dataset.path){ stopDemo(); var chg=b.dataset.path!==S.path; setPath(b.dataset.path); if(chg || !document.getElementById('view-proto').classList.contains('on')) jump('paywall'); }
+  showView(b.dataset.view); }); });
 document.querySelectorAll('.idea[data-jump]').forEach(function(b){
   b.addEventListener('click',function(){ showView('proto'); setPath(b.dataset.path); if(b.dataset.kw) setKw(b.dataset.kw); jump(b.dataset.jump); });
 });
