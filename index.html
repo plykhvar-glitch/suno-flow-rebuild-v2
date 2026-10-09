@@ -560,6 +560,16 @@ a{color:inherit}
 .panelcol{top:58px}
 .seg.kwseg{flex-wrap:wrap;justify-content:center;max-width:100%}
 @media(max-width:500px){.seg.kwseg{border-radius:16px}.kwseg .lab{width:100%;text-align:center;padding:5px 0 4px}}
+
+.ptag{display:inline-flex;align-items:center;font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--ink3);margin-bottom:8px}
+.ptag .pdot{width:7px;height:7px;margin-right:6px}
+.ptag.a{color:var(--accent-lift)}
+.herobtns .bigbtn{padding:15px 24px}
+
+.herobtns .qr{background:var(--surf);border:1px solid var(--hair2);padding:7px 16px 7px 7px;border-radius:14px}
+.herobtns .qr img{width:90px;height:90px;border-radius:6px}
+.herobtns .qr span{color:var(--ink3);font-size:12px}
+.herobtns .qr b{color:var(--ink);font-size:13px}
 </style>
 </head>
 <body>
@@ -572,8 +582,8 @@ a{color:inherit}
     </div>
     <div class="nav-links">
       <button class="on" data-view="over">Overview</button>
-      <button data-view="proto" data-path="organic"><i class="pdot o"></i>Organic<span class="lg"> prototype</span></button>
-      <button data-view="proto" data-path="asa"><i class="pdot a"></i>Apple Ads<span class="lg"> prototype</span></button>
+      <button data-view="proto" data-path="organic"><i class="pdot o"></i>Organic<span class="lg">&nbsp;prototype</span></button>
+      <button data-view="proto" data-path="asa"><i class="pdot a"></i>Apple Ads<span class="lg">&nbsp;prototype</span></button>
     </div>
   </div>
 </div>
@@ -585,14 +595,13 @@ a{color:inherit}
   <div class="wrap">
     <!-- month + year = the day you build, not this file --><div class="eyebrow">Growth Audit · October 2026</div>
     <h1>Suno</h1>
-    <p class="lede">Five ideas to unlock more revenue from the traffic you already have — on your paywall and after it.</p>
+    <p class="lede">Five ideas to unlock more revenue from the traffic you already have, starting at your paywall.</p>
     <div class="meta">Prepared by <b>Adapty</b> · based on your live iOS flow, your App Store listing and your Apple Ads keywords</div>
     <div class="herobtns">
       <button class="bigbtn org" data-view="proto" data-path="organic"><i class="pdot o"></i>Organic prototype <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
       <button class="bigbtn" data-view="proto" data-path="asa"><i class="pdot a"></i>Apple Ads prototype <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
     </div>
-    <p class="herohint">Organic: the paywall uses the name from your onboarding. Apple Ads: it also follows the search that brought them in.</p>
-    <div class="herobtns" style="margin-top:18px"><div class="qr"><img src="img/qr.svg" alt="QR code for the prototype"><span><b>Open it on your phone</b>Scan to try the flow in your hand.</span></div><button class="ghostbtn" data-demo><span class="pl"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></svg></span>Watch the 30-second walkthrough</button></div>
+    <div class="herobtns" style="margin-top:22px"><div class="qr"><img src="img/qr.svg" alt="QR code for the prototype"><span><b>Open it on your phone</b>Scan to try the flow in your hand.</span></div><button class="ghostbtn" data-demo><span class="pl"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></svg></span>Watch the 30-second walkthrough</button></div>
     <div class="stats">
       <div class="stat"><b>30,000+</b><span>apps run subscriptions<br>on Adapty</span></div>
       <div class="stat"><b>5</b><span>ideas, each rebuilt<br>as a working screen</span></div>
@@ -616,20 +625,8 @@ a{color:inherit}
 <div class="sec">
   <div class="wrap">
     <div class="sec-k">What this is</div>
-    <h2>We kept your onboarding exactly as it ships and worked on everything from the paywall on.</h2>
-    <p class="body">Adapty powers subscriptions for <b>30,000+ apps</b>, so we get to see what actually moves conversion and ARPU across the market rather than inside one app. We installed Suno, went through sign-up, birthday and name, read your App Store listing and your pricing page, and looked at the searches your Apple Ads bring people in from.</p>
-    <p class="body">Your onboarding already learns two useful things: <b>who someone is</b> (their name) and, for Apple Ads installs, <b>what they searched for</b>. Today the paywall uses neither. The ideas below put both to work on the paywall, the offer when they close it, and the first screen after they pay. <b>The prototype uses your design, not ours.</b></p>
-
-    <div class="notes">
-      <div class="note">
-        <h4>We did not touch your onboarding</h4>
-        <p>Sign-up, the birthday wheel and the name screen stay exactly as they ship, so the prototype starts at the paywall. Every change starts there, and every screen keeps your serif headlines, the Monthly / Annual switch, the Pro and Premier cards and the gradient Continue button.</p>
-      </div>
-      <div class="note">
-        <h4>You may have tested some of this</h4>
-        <p>We are working from the outside, so we cannot see your experiment history. If one of these is something you have already run, tell us — we will go deeper on the rest rather than repeat it.</p>
-      </div>
-    </div>
+    <h2>We went through Suno as a new user who wants to make music.</h2>
+    <p class="body">We downloaded the app, signed up and walked the flow to the paywall and past it, the way someone who just wants to make their first song would. Then we looked at what that person sees, next to what Suno already has: your rating, your plans, your credits and the searches your Apple Ads bring in. <b>Your onboarding stays as it is, and the prototype is built in your design.</b></p>
   </div>
 </div>
 
@@ -645,8 +642,9 @@ a{color:inherit}
       <button class="idea" data-jump="offer" data-path="organic">
         <span class="no">01</span>
         <span>
+          <span class="ptag"><i class="pdot o"></i>Organic <i class="pdot a" style="margin-left:6px"></i>Apple Ads</span>
           <h3>Give the back arrow a second chance</h3>
-          <p>Today the paywall’s back arrow is the end of the conversation. Someone who will not commit to 99,00 € a year never sees anything else, although Pro at 10,00 € a month is already in the store. Show them that, next to what Free leaves out.</p>
+          <p>Today the paywall’s back arrow ends the conversation. Someone who is not ready for 99,00 € a year never hears about Pro at 10,00 € a month, although it is already in the store. Show it to them, next to what Free leaves out.</p>
           <span class="seeit">See the screen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </span>
         <span class="out"><b>ARPU +10–15%</b><span>second chance</span></span>
@@ -655,9 +653,10 @@ a{color:inherit}
       <button class="idea" data-jump="paywall" data-path="asa">
         <span class="no">02</span>
         <span>
+          <span class="ptag a"><i class="pdot a"></i>Apple Ads</span>
           <h3>Match the paywall to the Apple Ads search</h3>
-          <p>Someone who searched “music maker”, someone who searched “SoundCloud” and someone who searched “ai cover” all land on “Do More With Suno”. Lead each one with the part of Pro they came for: songs a month, rights to release, their own voice.</p>
-          <span class="seeit">See the Apple Ads prototype <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <p>People who searched “music maker”, “SoundCloud” and “ai cover” all land on “Do More With Suno”. Lead each one with the part of Pro they came for: songs a month, the rights to release, their own voice.</p>
+          <span class="seeit">See the screen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </span>
         <span class="out"><b>CR +15–20%</b><span>to purchase</span></span>
       </button>
@@ -665,8 +664,9 @@ a{color:inherit}
       <button class="idea" data-jump="paywall" data-path="organic">
         <span class="no">03</span>
         <span>
+          <span class="ptag"><i class="pdot o"></i>Organic <i class="pdot a" style="margin-left:6px"></i>Apple Ads</span>
           <h3>Greet them by name, with your 4.9 under it</h3>
-          <p>Your onboarding asks for a name one screen before the paywall, then never uses it. Put it in your own headline, and put your 4.9 from 368K App Store ratings right under it, where the price is decided.</p>
+          <p>Your onboarding asks for a name one screen before the paywall. Use it in your own headline, and put your 4.9 from 368K App Store ratings right under it, where the price is decided.</p>
           <span class="seeit">See the screen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </span>
         <span class="out"><b>CR +10–15%</b><span>to purchase</span></span>
@@ -675,8 +675,9 @@ a{color:inherit}
       <button class="idea" data-jump="paywall" data-path="organic">
         <span class="no">04</span>
         <span>
+          <span class="ptag"><i class="pdot o"></i>Organic <i class="pdot a" style="margin-left:6px"></i>Apple Ads</span>
           <h3>Show the real saving on each plan</h3>
-          <p>In euros the “SAVE 20%” tag is off both ways: Pro annual saves 21 € (17.5%), Premier annual saves 121 € (29%). Say the saving per plan, in money, and the bigger number starts working for Premier.</p>
+          <p>On your euro paywall the two annual plans save quite different amounts: 21 € a year on Pro (17.5%) and 121 € on Premier (29%). One “SAVE 20%” tag covers both. Showing the saving per plan, in money, lets Premier’s bigger number do its work.</p>
           <span class="seeit">See the screen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </span>
         <span class="out"><b>ARPU +10–15%</b><span>annual mix</span></span>
@@ -685,8 +686,9 @@ a{color:inherit}
       <button class="idea" data-jump="paywall" data-path="asa" data-kw="maker">
         <span class="no">05</span>
         <span>
+          <span class="ptag a"><i class="pdot a"></i>Apple Ads</span>
           <h3>Count Pro in songs, not credits</h3>
-          <p>“2,500 Credits/Month” means little to someone who has not made a song yet. Your own homepage says it plainly: up to 500 songs a month on Pro. Use that line on the paywall and on the first screen after they pay.</p>
+          <p>“2,500 Credits/Month” is hard to picture before someone has made a song. Your homepage already says it plainly: up to 500 songs a month on Pro. Use that line on the paywall and on the first screen after they pay.</p>
           <span class="seeit">See the screen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </span>
         <span class="out"><b>CR +3–8%</b><span>to purchase</span></span>
@@ -701,11 +703,11 @@ a{color:inherit}
   <div class="wrap">
     <div class="sec-k">The Apple Ads path</div>
     <h2>One app, very different searches. One paywall per search.</h2>
-    <p class="body">Your Apple Ads bring in people with very different reasons to pay. Someone who typed “make songs” wants to make a lot of music. Someone who typed “SoundCloud” or “BandLab” already makes or posts music and cares about releasing it. Someone who typed “ai cover” wants their voice on a track. <b>Today all of them see the same paywall.</b> Here is how the same flow can speak to each of them.</p>
+    <p class="body">Someone who typed “make songs” wants to make a lot of music. Someone who typed “SoundCloud” already posts music and cares about releasing it. Someone who typed “ai cover” wants their own voice on a track. <b>Today all three see the same paywall.</b> Here is how one flow can speak to each of them.</p>
 
     <div class="flow5">
       <div class="f5"><div class="k">01</div><h4>They search and tap your ad</h4><p>“music maker”, “SoundCloud”, “ai cover”, “lyrics” or “suno”.</p></div>
-      <div class="f5"><div class="k">02</div><h4>Adapty reads the install’s Apple Ads attribution</h4><p>Campaign, ad group and keyword arrive with the user, so they can sit in an audience from the first launch.</p></div>
+      <div class="f5"><div class="k">02</div><h4>Adapty reads the Apple Ads attribution</h4><p>Campaign, ad group and keyword arrive with the install, so the user is in the right audience from the first launch.</p></div>
       <div class="f5"><div class="k">03</div><h4>Your onboarding runs as it is</h4><p>Sign-up, birthday, name. Nothing changes for anyone.</p></div>
       <div class="f5"><div class="k">04</div><h4>The paywall and the offer lead with their search</h4><p>Same screen, same prices. The headline, the line under it and the order of the plan lines follow the keyword.</p></div>
       <div class="f5"><div class="k">05</div><h4>Revenue and LTV per keyword</h4><p>Adapty’s Apple Ads Manager shows what each keyword earns after install, not only what it costs.</p></div>
@@ -717,7 +719,7 @@ a{color:inherit}
       <div class="irow"><b>Coming from another music app</b><span class="kw"><i>SoundCloud</i><i>BandLab</i><i>Voloco</i></span><p><q>Your songs are yours to release.</q> Commercial use rights and downloads first.</p></div>
       <div class="irow"><b>AI covers</b><span class="kw"><i>ai cover</i></span><p><q>Make covers in your own voice.</q> Record, upload and create with your own voice, uploads up to 30 minutes.</p></div>
       <div class="irow"><b>Lyrics</b><span class="kw"><i>lyrics</i></span><p><q>Turn your lyrics into full songs.</q> Suno’s best models first.</p></div>
-      <div class="irow"><b>Already know Suno</b><span class="kw"><i>suno</i></span><p>Their name and your 4.9 rating — the same paywall as organic installs.</p></div>
+      <div class="irow"><b>Already know Suno</b><span class="kw"><i>suno</i></span><p>Their name and your 4.9 rating, the same as organic installs.</p></div>
     </div>
     <p class="asa-note">We also see your ads in Germany, France, Japan, Mexico and Korea, with local keywords. The same split works per country, with the paywall in the local language.</p>
     <div class="asa-cta"><button class="bigbtn" id="openAsa">Open the Apple Ads prototype
@@ -725,8 +727,8 @@ a{color:inherit}
 
     <div class="vc">
       <span class="new">NEW IN ADAPTY</span>
-      <h3>Adapty now supports virtual currency — and Suno runs on credits.</h3>
-      <p>Suno sells two things: plans, and the credits that make songs. Pro comes with 2,500 credits a month, Premier with 10,000, and your App Store listing sells credit packs on top. <b>With virtual currency in Adapty, credits sit next to Pro and Premier</b> — on the same paywalls and in the same flows.</p>
+      <h3>Adapty now supports virtual currency. Suno runs on credits.</h3>
+      <p>Suno sells two things: plans, and the credits that make songs. Pro comes with 2,500 credits a month, Premier with 10,000, and your App Store listing sells credit packs on top. <b>With virtual currency in Adapty, credits sit next to Pro and Premier</b>, on the same paywalls and in the same flows.</p>
       <p>In the prototype the first screen after purchase shows the credit balance, and a top-up sheet sells your own packs to subscribers who need more.</p>
       <div class="packs"><span><b>500 credits</b> · $4.00</span><span><b>1,000 credits</b> · $8.00</span><span><b>2,000 credits</b> · $16.00</span></div>
     </div>
@@ -734,7 +736,7 @@ a{color:inherit}
     <div class="band">
       <div class="txt">
         <div class="lab">Potential outcome</div>
-        <p>Run together, these five move the same funnel at three points: what the paywall says to each person, what happens when they say no, and what they see once they have paid.</p>
+        <p>Together, the five work on three moments: what the paywall says to each person, what happens when they say no, and what they see once they have paid.</p>
       </div>
       <div class="nums">
         <div><b>+20%</b><span>CR to purchase</span></div>
