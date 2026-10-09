@@ -5,7 +5,7 @@
 Suno's onboarding (sign-up, birthday, name) stays exactly as it ships. Every change starts at the
 paywall: personalised with the name the onboarding collects, and — for Apple Ads installs — with
 the search that brought the person in. The prototype has two paths, **Organic** and **Apple Ads**,
-switchable above the phone.
+switchable above the phone. The prototype starts at the paywall: the onboarding screens before it are unchanged, so they are not rebuilt.
 
 | # | Idea | Screen | Potential outcome |
 | :-- | :-- | :-- | :-- |

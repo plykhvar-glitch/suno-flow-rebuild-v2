@@ -575,7 +575,7 @@ a{color:inherit}
     <div class="notes">
       <div class="note">
         <h4>We did not touch your onboarding</h4>
-        <p>Sign-up, the birthday wheel and the name screen are exactly as they ship. Every change starts at the paywall, and every screen keeps your serif headlines, the Monthly / Annual switch, the Pro and Premier cards and the gradient Continue button.</p>
+        <p>Sign-up, the birthday wheel and the name screen stay exactly as they ship, so the prototype starts at the paywall. Every change starts there, and every screen keeps your serif headlines, the Monthly / Annual switch, the Pro and Premier cards and the gradient Continue button.</p>
       </div>
       <div class="note">
         <h4>You may have tested some of this</h4>
@@ -736,47 +736,6 @@ a{color:inherit}
         <div class="finger" id="finger"></div>
         <div class="screenwrap">
 
-<!-- WELCOME — theirs, unchanged -->
-<section class="scr scr--welcome" data-id="welcome" data-light="1">
-  <div class="su-collage"><img src="img/collage.jpg" alt=""></div>
-  <div class="scr-top" style="padding:0"></div>
-  <div class="scr-body"><h2 class="su-wh" data-th="wel.h"></h2></div>
-  <div class="scr-foot">
-    <button class="su-cream" id="welG" data-go="birthday"><svg viewBox="0 0 24 24"><path fill="#4285F4" d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.3Z"/><path fill="#34A853" d="M12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22Z"/><path fill="#FBBC05" d="M6.4 14c-.2-.6-.3-1.3-.3-2s.1-1.4.3-2V7.4H3.1a10 10 0 0 0 0 9.2L6.4 14Z"/><path fill="#EA4335" d="M12 5.9c1.5 0 2.8.5 3.8 1.5l2.9-2.9A10 10 0 0 0 3.1 7.4L6.4 10c.8-2.3 3-4.1 5.6-4.1Z"/></svg><span data-t="sv.g"></span></button>
-    <button class="su-cream" data-go="birthday"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1Z"/></svg><span data-t="sv.p"></span></button>
-    <button class="su-cream" data-go="birthday"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7a4.5 4.5 0 0 0-3.5-1.9c-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8A4.7 4.7 0 0 0 4.2 9.5c-1.7 3-.4 7.3 1.2 9.7.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.1-.8s1.9.8 3.2.8c1.3 0 2.1-1.2 2.9-2.4.9-1.3 1.3-2.6 1.3-2.7 0 0-2.5-1-2.5-3.9ZM14 5.4c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.1-.6 2.8-1.4Z"/></svg><span data-t="sv.a"></span></button>
-    <p class="su-signin" data-th="wel.signin"></p>
-  </div>
-</section>
-
-<!-- BIRTHDAY — theirs, unchanged -->
-<section class="scr" data-id="birthday">
-  <div class="scr-top">
-    <button class="su-back" data-back><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
-    <h2 class="su-h" data-t="bd.h"></h2>
-    <p class="su-sub" data-t="bd.sub"></p>
-  </div>
-  <div class="scr-body">
-    <div class="su-wheelwrap">
-      <div class="su-wheelbar"></div>
-      <div class="su-wheel d" id="wD"></div>
-      <div class="su-wheel m" id="wM"></div>
-      <div class="su-wheel y" id="wY"></div>
-    </div>
-  </div>
-  <div class="scr-foot">
-    <button class="su-btn" id="bdBtn" data-go="name" data-t="cont"></button>
-    <p class="su-legal" data-th="bd.legal"></p>
-  </div>
-</section>
-
-<!-- NAME — theirs, unchanged -->
-<section class="scr" data-id="name">
-  <div class="scr-top"><p class="su-ntitle" data-t="nm.h"></p></div>
-  <div class="scr-body"><input class="su-name" id="nameIn" maxlength="24" autocomplete="off" spellcheck="false"></div>
-  <div class="scr-foot"><button class="su-btn" id="nmBtn" data-go="paywall" data-t="cont"></button></div>
-</section>
-
 <!-- PAYWALL — their composition -->
 <section class="scr scr--pay" data-id="paywall">
   <button class="su-back su-pxb" id="payClose" aria-label="Back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
@@ -869,7 +828,7 @@ a{color:inherit}
     </div>
     <div class="demo-cap hidden" id="demoCap"><div class="bar"><i id="demoProg"></i></div><p id="demoTxt"></p><button id="demoStop">Stop</button></div>
     <div class="chips" id="chips"></div>
-    <p class="chiphint" id="chiphint">Jump to any screen — answers already filled in.</p>
+    <p class="chiphint" id="chiphint">Jump to any screen — the name from their onboarding is already filled in.</p>
     <div class="qr"><img src="img/qr.svg" alt="QR code for this prototype"><span><b>Open it on your phone</b>Scan to try the flow in your hand.</span></div>
   </div>
   <div class="panelcol"><div class="pn" id="panel"></div></div>
@@ -1006,37 +965,16 @@ function buildPlans(){
     b.addEventListener('click',function(){ S.pack=p.c; syncScreen(true); }); pk.appendChild(b); });
 }
 
-/* the birthday wheel — three working scroll-snap columns */
-var IH=44, WH={};
-function wheel(id,key,items){ var el=document.getElementById(id), h='<div class="sp"></div>';
-  items.forEach(function(v){ h+='<div class="it">'+v+'</div>'; }); el.innerHTML=h+'<div class="sp"></div>';
-  var w={el:el,key:key,items:items,timer:null}; WH[key]=w;
-  if(!el._wired){ el._wired=1; el.addEventListener('scroll',function(){ var ww=WH[key], idx=paint(ww); clearTimeout(ww.timer);
-    ww.timer=setTimeout(function(){ setBd(key,idx); syncScreen(true); },110); }); }
-}
-function paint(w){ var idx=Math.round(w.el.scrollTop/IH); w.el.querySelectorAll('.it').forEach(function(it,i){ var d=Math.abs(i-idx); it.style.opacity=d===0?1:(d===1?.5:.22); }); return idx; }
-var Y0=1926, YN=new Date().getFullYear();
-function bdIdx(key){ return key==='d'?S.bd.d-1 : key==='m'?S.bd.m : S.bd.y-Y0; }
-function setBd(key,idx){ if(key==='d') S.bd.d=Math.min(31,idx+1); else if(key==='m') S.bd.m=Math.min(11,idx); else S.bd.y=Math.min(YN,Y0+idx); }
-function setWheels(){ ['d','m','y'].forEach(function(k){ var w=WH[k]; if(!w) return; w.el.scrollTop=bdIdx(k)*IH; paint(w); }); }
-function buildWheels(){ var d=[],y=[]; for(var i=1;i<=31;i++) d.push(i); for(var j=Y0;j<=YN;j++) y.push(j);
-  wheel('wD','d',d); wheel('wM','m',MONTHS[S.lang]); wheel('wY','y',y); setWheels(); }
-
 function applyStatic(){
   document.documentElement.lang=S.lang;
   document.querySelectorAll('[data-t]').forEach(function(el){ el.textContent=t(el.dataset.t); });
   document.querySelectorAll('[data-th]').forEach(function(el){ el.innerHTML=t(el.dataset.th); });
-  document.getElementById('nameIn').placeholder=t('nm.ph');
-  buildPlans(); buildWheels();
+  buildPlans();
 }
 
 /* ================= everything downstream reads S ================= */
 function syncScreen(fromWheel){
   var li=L(), k=K(), n=nm(), c=cur$();
-  if(!fromWheel) setWheels();
-  document.getElementById('bdBtn').disabled = age()<13;
-  var ni=document.getElementById('nameIn'); if(ni.value!==S.name) ni.value=S.name;
-  document.getElementById('nmBtn').disabled = !S.name.trim();
 
   /* paywall */
   buildPlans();
@@ -1070,15 +1008,15 @@ function syncScreen(fromWheel){
 }
 
 /* ================= router ================= */
-function ORDER(){ return S.path==='asa' ? ['welcome','birthday','name','paywall','offer','pro','topup'] : ['welcome','birthday','name','paywall','offer','pro']; }
-var LABEL={welcome:'Sign-up',birthday:'Birthday',name:'Name',paywall:'Paywall',offer:'Offer on close',pro:'After purchase',topup:'Credit top-up'};
-var scr={}, hist=[], cur='welcome';
+function ORDER(){ return S.path==='asa' ? ['paywall','offer','pro','topup'] : ['paywall','offer','pro']; }
+var LABEL={paywall:'Paywall',offer:'Offer on close',pro:'After purchase',topup:'Credit top-up'};
+var scr={}, hist=[], cur='paywall';
 document.querySelectorAll('.scr').forEach(function(s){ scr[s.dataset.id]=s; });
 var UNDER={offer:'paywall', topup:'pro'};
 
 function chrome(){ var lite=S.theme==='light', ink=lite && !scr[cur].dataset.light;
   document.getElementById('sbar').classList.toggle('ink',ink); document.getElementById('homebar').classList.toggle('ink',ink); }
-function enter(id){ chrome(); paintChips(); paintPanel(); if(id==='birthday') requestAnimationFrame(setWheels); }
+function enter(id){ chrome(); paintChips(); paintPanel(); }
 function go(id,opts){
   opts=opts||{}; if(id===cur) return;
   var from=scr[cur], to=scr[id];
@@ -1123,8 +1061,6 @@ function paintChips(){
 /* ================= wiring ================= */
 document.querySelectorAll('[data-go]').forEach(function(b){ b.addEventListener('click',function(){ if(!b.disabled) go(b.dataset.go); }); });
 document.querySelectorAll('[data-back]').forEach(function(b){ b.addEventListener('click',back); });
-document.getElementById('nameIn').addEventListener('input',function(e){ S.name=e.target.value; syncScreen(true); });
-document.getElementById('nameIn').addEventListener('keydown',function(e){ if(e.key==='Enter' && S.name.trim()) go('paywall'); });
 document.querySelectorAll('#perSeg button').forEach(function(b){ b.addEventListener('click',function(){ S.period=b.dataset.p; syncScreen(true); }); });
 document.querySelectorAll('#planList .su-plan').forEach(function(b){ b.addEventListener('click',function(){ S.plan=b.dataset.v; syncScreen(true); }); });
 document.getElementById('payClose').addEventListener('click',function(){ go('offer'); });
@@ -1135,13 +1071,13 @@ document.getElementById('offerCta').addEventListener('click',function(){ S.paid=
 document.getElementById('topLink').addEventListener('click',function(){ go('topup'); });
 document.getElementById('tpCta').addEventListener('click',function(){ S.topup+=S.pack; syncScreen(true); back(); });
 document.getElementById('tpNo').addEventListener('click',back);
-document.getElementById('prCta').addEventListener('click',function(){ jump('welcome'); });
+document.getElementById('prCta').addEventListener('click',function(){ jump('paywall'); });
 
 function setSeg(id,attr,val){ document.querySelectorAll('#'+id+' button').forEach(function(b){ b.classList.toggle('on', b.dataset[attr]===val); }); }
 function setLang(l){ S.lang=l; S0.lang=l; setSeg('segLang','lang',l); applyStatic(); syncScreen(); paintPanel(); }
 function setTheme(th){ S.theme=th; S0.theme=th; document.getElementById('phoneIn').classList.toggle('lite',th==='light'); setSeg('segTheme','theme',th); chrome(); }
 function setPath(p){ S.path=p; S0.path=p; setSeg('segPath','path',p); document.getElementById('segKw').classList.toggle('hidden',p!=='asa');
-  document.getElementById('chiphint').textContent = p==='asa' ? 'Pick the search above the phone — the paywall, the offer and the first screen after purchase follow it.' : 'Jump to any screen — answers already filled in.';
+  document.getElementById('chiphint').textContent = p==='asa' ? 'Pick the search above the phone — the paywall, the offer and the first screen after purchase follow it.' : 'Jump to any screen — the name from their onboarding is already filled in.';
   if(ORDER().indexOf(cur)<0) jump('pro'); else { syncScreen(); paintChips(); paintPanel(); } }
 function setKw(k){ S.kw=k; S0.kw=k; setSeg('segKw','kw',k); syncScreen(true); paintPanel(); }
 document.querySelectorAll('#segLang button').forEach(function(b){ b.addEventListener('click',function(){ stopDemo(); setLang(b.dataset.lang); }); });
@@ -1167,15 +1103,13 @@ function startDemo(){
   stopDemo(); var tok=++demo.tok; demo.on=true; demo.t0=Date.now();
   var keep={lang:S.lang,theme:S.theme,path:S.path,kw:S.kw}; S=defaults(); Object.assign(S,keep);
   var asa=S.path==='asa'; if(asa){ S.kw='maker'; setSeg('segKw','kw','maker'); }
-  applyStatic(); jump('welcome');
+  applyStatic(); jump('paywall');
   document.getElementById('demoCap').classList.remove('hidden');
   demo.iv=setInterval(function(){ document.getElementById('demoProg').style.width=Math.min(100,(Date.now()-demo.t0)/290)+'%'; },200);
   (async function(){
     try{
       if(!asa){
-        cap('Your onboarding, exactly as it ships: sign-up, birthday, name.'); await pause(1500,tok);
-        await tap('#welG',tok); await pause(900,tok); await tap('#bdBtn',tok);
-        cap('The name they type here is the one thing the paywall can use.'); await pause(1000,tok); await tap('#nmBtn',tok);
+        cap('Their onboarding has run as it ships. We start where the changes start: the paywall.'); await pause(1600,tok);
         cap('Your paywall, now with their name, your 4.9 and the real saving on each plan.'); await pause(2200,tok);
         await tap('#planList [data-v=premier]',tok); await pause(900,tok);
         await tap('#perSeg [data-p=monthly]',tok); await pause(700,tok); await tap('#perSeg [data-p=annual]',tok); await pause(500,tok);
@@ -1186,8 +1120,7 @@ function startDemo(){
         cap('Switch to “Apple Ads” above the phone to see a paywall per search.');
         finger.classList.remove('show'); await pause(2400,tok); stopDemo();
       } else {
-        cap('An install from the search “music maker”. Onboarding runs as it is.'); await pause(1300,tok);
-        await tap('#welG',tok); await pause(500,tok); await tap('#bdBtn',tok); await pause(400,tok); await tap('#nmBtn',tok);
+        cap('An install from the search “music maker”. Onboarding has run as it ships.'); await pause(1500,tok);
         cap('“music maker” → the paywall counts Pro in songs.'); await pause(2300,tok);
         cap('“SoundCloud” → rights to release and downloads come first.'); setKw('rival'); await pause(2300,tok);
         cap('“ai cover” → their own voice comes first.'); setKw('cover'); await pause(2300,tok);
@@ -1210,15 +1143,8 @@ phoneIn.addEventListener('pointerdown',function(e){ if(e.isTrusted && demo.on) s
 </script>
 <script>
 /* ---- the short panel: hypothesis + potential outcome, nothing else ---- */
-var ONB='Your onboarding is not part of this audit — sign-up, the birthday wheel and the name screen stay exactly as they ship. ';
 var KWNAME={maker:'“music maker”',rival:'“SoundCloud”',cover:'“ai cover”',lyrics:'“lyrics”',brand:'“suno”'};
 function PANELS(){ var asa=S.path==='asa', eur=!asa; return {
-welcome:{ctx:true,t:'Sign-up — yours, unchanged',
- kept:ONB+(asa?'For an Apple Ads install, the search that brought them in arrives with the install, before this screen.':'Google, phone or Apple, as today.')},
-birthday:{ctx:true,t:'When’s your birthday? — yours, unchanged',
- kept:'Untouched — your three-column date wheel, the lock line, Continue staying grey until the date says 13 or older, and your legal line.'},
-name:{ctx:true,t:'What’s your name? — yours, unchanged',
- kept:'Untouched. This is the answer the paywall now uses: it goes into the paywall headline, the offer and the first screen after purchase.'},
 paywall: asa ? {n:2,t:'Match the paywall to the Apple Ads search',
  hyp:'Try leading with what the search asked for — now '+KWNAME[S.kw]+' — <b>because people from “music maker”, “SoundCloud” and “ai cover” came for different parts of Pro, and today they all read “Do More With Suno”</b>. Switch the search above the phone.',
  hyp2:'Try counting Pro in songs, <b>because “2,500 Credits/Month” means nothing before someone has made a song, and your homepage already says “up to 500 songs a month”</b>.',
@@ -1269,6 +1195,7 @@ function paintPanel(){
     }
     h += '<div class="pn-kept"><b>Your design, unchanged.</b> '+d.kept+'</div>';
   }
+  h += '<div class="pn-kept"><b>Before this screen.</b> Your onboarding runs exactly as it ships — sign-up, birthday, name — so the prototype starts at the paywall. “Maya” stands in for the name they typed'+(S.path==='asa'?', and the search above the phone for the keyword that brought them in.':'.')+'</div>';
   if(S.path==='asa') h += '<div class="pn-kept"><b>Apple Ads path.</b> Prices are your US App Store prices, since the keyword examples are US searches.</div>';
   if(S.lang!=='en') h += '<div class="pn-kept"><b>Language.</b> Screens are shown in '+(S.lang==='es'?'Spanish':'German')+' to show one flow serving every market. Translated by us; store prices stay as published, and the rating is your US listing’s.</div>';
   h += '<div class="pn-foot">Ranges are Adapty’s expected effect from tests across 30,000+ subscription apps — not measured lift for Suno. '
@@ -1283,7 +1210,6 @@ function showView(v){
   document.getElementById('view-'+v).classList.add('on');
   document.querySelectorAll('.nav-links button[data-view]').forEach(function(b){ b.classList.toggle('on', b.dataset.view===v); });
   window.scrollTo(0,0);
-  if(v==='proto' && cur==='birthday') requestAnimationFrame(setWheels);
 }
 document.querySelectorAll('[data-view]').forEach(function(b){ b.addEventListener('click',function(){ showView(b.dataset.view); }); });
 document.querySelectorAll('.idea[data-jump]').forEach(function(b){
@@ -1293,7 +1219,7 @@ document.getElementById('openAsa').addEventListener('click',function(){ showView
 document.querySelectorAll('[data-demo]').forEach(function(b){ b.addEventListener('click',function(){ showView('proto'); startDemo(); }); });
 
 applyStatic();
-scr.welcome.classList.add('is-active');
+scr.paywall.classList.add('is-active');
 syncScreen(); chrome(); paintChips(); paintPanel();
 if(/[?&]open=proto/.test(location.search)) showView('proto');
 if(/[?&]open=asa/.test(location.search)){ showView('proto'); setPath('asa'); jump('paywall'); }
